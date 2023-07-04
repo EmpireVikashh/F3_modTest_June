@@ -35,6 +35,7 @@ getInfoBtn.addEventListener('click', ()=>{
             const pincode = data.postal;
             localStorage.setItem("ip_add", ip);
             // Display location on a map
+              ipField.innerText = data.ip;
             displayDetails(lat, lon, data);
             pinInfo(timezone, pincode);
             getPostOffices(pincode);
